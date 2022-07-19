@@ -5,6 +5,8 @@ read email
 
 docker pull ubuntu:20.04
 
+mkdir -p $HOME/Documents/ubuntu_docker 
+
 docker run -it -d --name ubuntu-docker --hostname ubuntu-docker \
 	-v $HOME/Documents/ubuntu_docker:/root/Documents/shared \
 	-e DEBIAN_FRONTEND=noninteractive \
